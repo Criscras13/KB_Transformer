@@ -1,0 +1,8 @@
+{
+  "sections": {{ .Site.Data.zendesk.sections | jsonify }},
+  "count": {{ len .Site.Data.zendesk.sections }},
+  "next_page": null,
+  "previous_page": null,
+  "sort_by": "position",
+  "sort_order": "asc"
+}

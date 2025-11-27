@@ -1,0 +1,8 @@
+{
+  "articles": {{ .Site.Data.zendesk.articles | jsonify }},
+  "count": {{ len .Site.Data.zendesk.articles }},
+  "next_page": null,
+  "previous_page": null,
+  "sort_by": "position",
+  "sort_order": "asc"
+}

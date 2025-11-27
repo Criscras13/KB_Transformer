@@ -1,0 +1,57 @@
+[
+    {
+        "id": 2001,
+        "category_id": 1001,
+        "name": "Installation",
+        "description": "How to install the software.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/sections/2001",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/sections/2001.json",
+        "parent_section_id": null,
+        "position": 1
+    },
+    {
+        "id": 2002,
+        "category_id": 1001,
+        "name": "Configuration",
+        "description": "Configuring settings.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/sections/2002",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/sections/2002.json",
+        "parent_section_id": null,
+        "position": 2
+    },
+    {
+        "id": 2003,
+        "category_id": 1002,
+        "name": "User Management",
+        "description": "Managing users.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/sections/2003",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/sections/2003.json",
+        "parent_section_id": null,
+        "position": 1
+    },
+    {
+        "id": 2004,
+        "category_id": 1002,
+        "name": "Billing",
+        "description": "Billing information.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/sections/2004",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/sections/2004.json",
+        "parent_section_id": null,
+        "position": 2
+    },
+    {
+        "id": 2005,
+        "category_id": 1003,
+        "name": "Login Issues",
+        "description": "Problems logging in.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/sections/2005",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/sections/2005.json",
+        "parent_section_id": null,
+        "position": 1
+    }
+]

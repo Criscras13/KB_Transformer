@@ -1,0 +1,77 @@
+[
+    {
+        "id": 3001,
+        "section_id": 2001,
+        "title": "System Requirements",
+        "body": "<p>These are the system requirements...</p>",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/articles/3001",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/articles/3001.json",
+        "label_names": [
+            "requirements",
+            "setup"
+        ],
+        "promoted": false,
+        "position": 1
+    },
+    {
+        "id": 3002,
+        "section_id": 2001,
+        "title": "Downloading the Installer",
+        "body": "<p>Click here to download...</p>",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/articles/3002",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/articles/3002.json",
+        "label_names": [
+            "download",
+            "installer"
+        ],
+        "promoted": true,
+        "position": 2
+    },
+    {
+        "id": 3003,
+        "section_id": 2002,
+        "title": "Setting up the Proxy",
+        "body": "<p>Configure your proxy settings...</p>",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/articles/3003",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/articles/3003.json",
+        "label_names": [
+            "proxy",
+            "network"
+        ],
+        "promoted": false,
+        "position": 1
+    },
+    {
+        "id": 3004,
+        "section_id": 2003,
+        "title": "Adding a User",
+        "body": "<p>To add a user, go to...</p>",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/articles/3004",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/articles/3004.json",
+        "label_names": [
+            "users",
+            "admin"
+        ],
+        "promoted": false,
+        "position": 1
+    },
+    {
+        "id": 3005,
+        "section_id": 2005,
+        "title": "Resetting Password",
+        "body": "<p>Click forgot password...</p>",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/articles/3005",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/articles/3005.json",
+        "label_names": [
+            "password",
+            "login"
+        ],
+        "promoted": true,
+        "position": 1
+    }
+]

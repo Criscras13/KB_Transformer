@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1001,
+        "name": "Getting Started",
+        "description": "Learn the basics.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/categories/1001",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/categories/1001.json",
+        "position": 1
+    },
+    {
+        "id": 1002,
+        "name": "Account Setup",
+        "description": "Setting up your account.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/categories/1002",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/categories/1002.json",
+        "position": 2
+    },
+    {
+        "id": 1003,
+        "name": "Troubleshooting",
+        "description": "Solve common problems.",
+        "locale": "en-us",
+        "html_url": "https://support.knowbe4.com/hc/en-us/categories/1003",
+        "url": "https://support.knowbe4.com/api/v2/help_center/en-us/categories/1003.json",
+        "position": 3
+    }
+]
