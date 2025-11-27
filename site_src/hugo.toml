@@ -1,14 +1,3 @@
 baseURL = 'https://Criscras13.github.io/API_testing/'
 languageCode = 'en-us'
 title = 'KnowBe4 Static API Replica'
-
-[mediaTypes]
-  [mediaTypes."application/json"]
-    suffixes = ["json"]
-
-[outputFormats]
-  [outputFormats.API-JSON]
-    mediaType = "application/json"
-    baseName = "index"
-    isPlainText = true
-    notAlternative = true
