@@ -44,9 +44,17 @@ Use the following URLs to access the static API endpoints. These are the URLs yo
     ```
 
 *   **Individual Articles**:
-    Individual articles are accessible via their ID. The `html_url` field in the article lists has been rewritten to point to these JSON endpoints to allow AI agents to "browse" the content.
+    Individual articles are accessible in two formats:
+    
+    **JSON Format** (for API clients):
     ```
     https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/{id}.json
+    ```
+    
+    **HTML Wrapper** (for AI agents/browsers):
+    The `html_url` field in the article lists points to HTML wrapper pages that display the JSON data in a `<pre>` tag. This allows AI browsing tools (like Google GEMs) to access the content as a "webpage" rather than raw JSON.
+    ```
+    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/{id}.html
     ```
 
 ## Updating Data
