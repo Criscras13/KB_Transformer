@@ -59,6 +59,19 @@ Each enhanced article contains:
 
 - **html_url** - AI browses this (GitHub mirror with images)
 - **source_url** - AI shares this (official KnowBe4 article)
+---
+
+## GEM Configuration
+
+For detailed instructions on how to configure your Google Gemini GEM, including the System Instructions and Knowledge Sources, please see:
+
+👉 **[GEM_SETUP.md](GEM_SETUP.md)**
+
+---
+
+## Updating Data
+
+**Windows:**
 ```bash
 update-data.bat
 ```
