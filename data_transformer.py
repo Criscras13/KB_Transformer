@@ -70,7 +70,10 @@ def transform_body_content(body_content):
     # Regex for article links (support.knowbe4.com or knowbe4.zendesk.com)
     # Matches: https://.../articles/{id}{optional-slug}
     # We capture the ID in group 2
-    body_content = re.sub(r'https://(support\.knowbe4\.com|knowbe4\.zendesk\.com)/hc/en-us/articles/(\d+)[^"\s<]*', replace_article_link, body_content)
+    # body_content = re.sub(r'https://(support\.knowbe4\.com|knowbe4\.zendesk\.com)/hc/en-us/articles/(\d+)[^"\s<]*', replace_article_link, body_content)
+    
+    # KEEP ORIGINAL LINKS: We commented out the rewriting above so links point to KnowBe4
+
     
     # Convert HTML attributes to use single quotes instead of double quotes
     # This prevents json.dumps from escaping them as \", which confuses browser linkifiers
