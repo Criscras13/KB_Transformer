@@ -59,33 +59,6 @@ Each enhanced article contains:
 
 - **html_url** - AI browses this (GitHub mirror with images)
 - **source_url** - AI shares this (official KnowBe4 article)
-- **images.url** - AI shares these (screenshot links)
-
----
-
-## GEM Configuration
-
-### Knowledge Sources
-```
-1. https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/experimental/articles.html
-2. https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/experimental/topics_to_images.html
-3. https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/experimental/image_index.html
-```
-
-### Instructions
-```
-When answering KnowBe4 questions:
-1. Browse enhanced articles for content
-2. Include screenshot URLs from images array
-3. Link to source_url for official article
-4. Format: "**Screenshot:** [url]" and "**Full article:** [source_url]"
-```
-
----
-
-## Updating Data
-
-**Windows:**
 ```bash
 update-data.bat
 ```
