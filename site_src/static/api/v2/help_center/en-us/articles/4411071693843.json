@@ -26,6 +26,28 @@
     "label_names": [],
     "body": "<p><a href='https://www.cyren.com/blog/articles/cyren-and-knowbe4' target='_blank' rel='noopener'>Cyren Inbox Security</a> (CIS) establishes a new layer of automated security to detect and remediate phishing, business email compromise (BEC), and malware threats that have penetrated existing defenses and reached your users' mailbox. Integrating CIS with your KnowBe4 platform will allow your users to scan and report potential phishing threats, make informed decisions on whether or not an email is malicious, and reinforce their security awareness training and simulated phishing training.</p>\n<p>Once your users scan or report an email, it's sent to CIS. If the scanned or reported email is a simulated phishing email, CIS will identify and classify the email as Training, with the exception of any URLs or attachments in the email. Then, you can find an indication of your training campaigns on the <strong>Investigate</strong> page in your CIS platform.</p>\n<p>If you enable the <strong>Button Feedback</strong> feature and add your Phish Alert license key in the <strong>Token</strong> field of your CIS platform, your KnowBe4 platform will be updated when your user reports a simulated phishing email with the Cyren button. Scan or report events will be sent back to your KnowBe4 platform and appear on the Phish Alert Button report. You can find this report on the <a href='https://support.knowbe4.com/hc/en-us/articles/204218028#PAB'>Dashboard</a> of your KnowBe4 console.</p>\n<div class='callout-note'>\n<div>\n<strong>Note:</strong>You'll need to remove the <strong>US</strong> from the beginning of your Phish Alert license key in order to integrate CIS with your KnowBe4 platform.</div>\n</div>\n<p><a data-fancybox='single' data-src='https://helpimg.s3.amazonaws.com/integrations/CyrexIntegration1.png'><img src='https://helpimg.s3.amazonaws.com/integrations/CyrexIntegration1.png' alt=' '></a></p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/4411071693843-Integrate-Cyren-Inbox-Security-CIS-with-Your-KnowBe4-Console"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/4411071693843-Integrate-Cyren-Inbox-Security-CIS-with-Your-KnowBe4-Console",
+    "images": [
+      {
+        "url": "https://helpimg.s3.amazonaws.com/integrations/CyrexIntegration1.png",
+        "alt": "This image is a screenshot of a web application configuration page, specifically for integrating Security Awareness Training (SAT) services.\n\n**Header and Navigation:**\n*   **Top Bar (Global):** Displays the organization name (\"Cyren Demo Inc\"), a \"Help Center\" dropdown, a notification bell icon (with a badge indicating 9 unread notifications), and a user profile/account dropdown. A light blue banner contains the message \"Welcome to Cyren Inbox Security!\".\n*   **Left Navigation Pane:** A dark blue sidebar branded with \"CYREN\" at the top. The main navigation items are: Overview, Applications, Cases, Investigate, Reports (dropdown), and Settings (active dropdown).\n*   **Settings Sub-navigation:** The \"Settings\" section is expanded and highlighted in dark blue. Sub-items listed are: Account, Administrators, Email Banner, Internal Domains, Safe Senders & URLs, Alerts, **SAT Integration** (currently selected and highlighted in red-orange), and API Management.\n\n**Main Content Area (SAT Integration Page):**\nThe page is titled \"Security Awareness Training Integration.\" It is divided into three main configuration sections:\n\n1.  **Email Analysis Integration:**\n    *   **Type:** Displays the integrated service provider name, \"KnowBe4,\" in large orange text.\n    *   **Active:** A blue toggle switch is in the 'On' position, indicating the integration is active.\n\n2.  **Button Feedback Integration:**\n    *   **Section Title:** Includes a question mark icon for help.\n    *   **Token:** An input field is labeled \"Token (Optional)\" with a placeholder text.\n    *   **Action:** A grayed-out button labeled \"Connect.\"\n\n3.  **Button Feedback Mailbox:**\n    *   **Section Title:** Includes a question mark icon for help.\n    *   **Email Address:** An input field is labeled \"Email Address:\" with the placeholder text \"email@company.com.\"\n    *   **Action:** A grayed-out button labeled \"Connect.\"\n\nThe overall UI utilizes a clean, light gray background with dark text and blue accents for interactive elements and active navigation.",
+        "position": 1,
+        "context": "Phish Alert license key in order to integrate CIS with your KnowBe4 platform."
+      }
+    ],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "cis",
+        "console",
+        "cyren",
+        "inbox",
+        "integrate",
+        "security",
+        "your"
+      ],
+      "image_count": 1
+    }
   }
 }

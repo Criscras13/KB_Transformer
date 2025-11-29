@@ -28,6 +28,23 @@
     ],
     "body": "\n<p>If you see the message below when trying to access an email, then the sender has revoked access to the package or removed your email address from the email access list.</p>\n<p><a data-fancybox='single' data-src='https://helpimg.s3.amazonaws.com/egress/0EM4J000002deKr.jpg'> <img src='https://helpimg.s3.amazonaws.com/egress/0EM4J000002deKr.jpg' alt=''> </a></p>\n<p>If you need access, you will need to contact the sender of the email. Support does not have access to do this.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716006662291-Access-to-Message-Revoked"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716006662291-Access-to-Message-Revoked",
+    "images": [
+      {
+        "url": "https://helpimg.s3.amazonaws.com/egress/0EM4J000002deKr.jpg",
+        "alt": "This image displays an application error notification box, likely an inline alert or dialog component.\n\n**UI Elements and Layout:**\n*   **Context:** The component uses a high-contrast layout (black text on a white background) and is bordered by a thin dark line.\n*   **Icon:** A standard critical error icon is positioned on the left. This icon consists of a large, red 'X' enclosed within a red circular outline, signifying an unrecoverable error or denial of service.\n\n**Text and Context:**\n*   **Error Message:** The accompanying text is displayed in black, standard font, indicating a security or access restriction failure.\n*   **Full Text Transcription:** \"Access to message \"TJ-181231-100523\" denied because it has been revoked.\"\n*   **Context:** The message communicates that access permissions to a specific object, identified by the unique message ID **TJ-181231-100523**, have been denied due to the previous revocation of the message's access rights.",
+        "position": 1,
+        "context": "er has revoked access to the package or removed your email address from the email access list."
+      }
+    ],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "access",
+        "revoked"
+      ],
+      "image_count": 1
+    }
   }
 }

@@ -11,7 +11,8 @@ from collections import defaultdict
 import html
 
 # Configuration
-BASE_URL = "https://Criscras13.github.io/KB_Transformer/site_src/static"
+BASE_URL = "https://Criscras13.github.io/KB_Transformer"
+print(f"DEBUG: BASE_URL is {BASE_URL}")
 BASE_DIR = Path("site_src/static/api/v2/help_center/en-us")
 ARTICLES_DIR = BASE_DIR / "articles"
 EXPERIMENTAL_DIR = BASE_DIR / "experimental"
@@ -227,13 +228,14 @@ def load_section_and_category_mapping():
 
 
 def process_articles(image_captions, section_map, category_map):
-    """Process all articles and create enhanced versions."""
+    """Process all articles and create enhanced versions (Overwriting Standard)."""
     if not ARTICLES_DIR.exists():
         print(f"ERROR: Articles directory not found: {ARTICLES_DIR}")
         return None, None, None
     
-    exp_articles_dir = EXPERIMENTAL_DIR / "articles"
-    exp_articles_dir.mkdir(parents=True, exist_ok=True)
+    # We now overwrite the standard articles directory with enhanced versions
+    # Indexes will still go to EXPERIMENTAL_DIR
+    EXPERIMENTAL_DIR.mkdir(parents=True, exist_ok=True)
     
     image_index = {}
     articles_list = []
@@ -247,33 +249,18 @@ def process_articles(image_captions, section_map, category_map):
         if article_count % 100 == 0:
             print(f"  Processed {article_count} articles, {total_images} images...")
         
-        # Debug: show first few article names
-        if article_count <= 3:
-            print(f"  DEBUG: Processing article {article_file.name}")
-        
         try:
             with open(article_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                # Article data is nested under 'article' key
                 article = data.get('article', {})
         except Exception as e:
-            if article_count <= 5:
-                print(f"  DEBUG: Failed to load {article_file.name}: {e}")
             continue
         
         body = article.get('body', '')
-        if article_count <= 3:
-            print(f"  DEBUG: Body length: {len(body)}, contains <img: {'<img' in body}, contains &lt;img: {'&lt;img' in body}")
-        
         images = extract_images_from_html(body, image_captions)
         
-        if images and article_count <= 5:
-            print(f"  DEBUG: Found {len(images)} images in {article_file.name}")
-        
-        if not images:
-            continue
-        
-        total_images += len(images)
+        if images:
+            total_images += len(images)
         
         section_id = article.get('section_id')
         section_info = section_map.get(section_id, {})
@@ -292,8 +279,10 @@ def process_articles(image_captions, section_map, category_map):
         # Create enhanced article with FULL URLs
         article_id = article['id']
         enhanced_article = article.copy()
-        enhanced_article['url'] = f"{BASE_URL}/api/v2/help_center/en-us/experimental/articles/{article_id}.json"
-        enhanced_article['html_url'] = f"{BASE_URL}/api/v2/help_center/en-us/experimental/articles/{article_id}.html"
+        
+        # URL Construction (Standard Path)
+        enhanced_article['url'] = f"{BASE_URL}/api/v2/help_center/en-us/articles/{article_id}.json"
+        enhanced_article['html_url'] = f"{BASE_URL}/api/v2/help_center/en-us/articles/{article_id}.html"
         enhanced_article['images'] = images
         enhanced_article['metadata'] = {
             'category': category_name,
@@ -302,27 +291,26 @@ def process_articles(image_captions, section_map, category_map):
             'image_count': len(images)
         }
         
-        # Save enhanced article JSON
-        output_json = exp_articles_dir / f"{article_id}.json"
-        with open(output_json, 'w', encoding='utf-8') as f:
-            json.dump(enhanced_article, f, indent=2)
+        # OVERWRITE Standard Article JSON
+        with open(article_file, 'w', encoding='utf-8') as f:
+            json.dump({"article": enhanced_article}, f, indent=2)
         
-        # Save enhanced article HTML
-        output_html = exp_articles_dir / f"{article_id}.html"
+        # OVERWRITE Standard Article HTML
+        output_html = ARTICLES_DIR / f"{article_id}.html"
         with open(output_html, 'w', encoding='utf-8') as f:
             f.write(generate_html_wrapper(enhanced_article, f"Article {article_id}"))
         
-        # Add to articles list
+        # Add to articles list (for the Index)
         articles_list.append({
             'id': article_id,
             'title': article.get('title', ''),
             'url': enhanced_article['url'],
             'html_url': enhanced_article['html_url'],
             'image_count': len(images),
-            'topics': topics[:10]  # First 10 topics
+            'topics': topics[:10]
         })
         
-        # Build image index with image IDs as keys (article_id_position)
+        # Build image index
         for img in images:
             image_id = f"{article_id}_{img['position']}"
             image_index[image_id] = {
@@ -339,15 +327,14 @@ def process_articles(image_captions, section_map, category_map):
                 'context': img['context']
             }
     
-    print(f"\nCompleted: {article_count} articles, {total_images} images indexed")
-    return image_index, articles_list, exp_articles_dir
+    print(f"\nCompleted: {article_count} articles processed, {total_images} images indexed")
+    return image_index, articles_list, EXPERIMENTAL_DIR
 
 
 def build_topic_index(image_index):
     """Build topic-to-images reverse index using image IDs only."""
     topic_index = defaultdict(list)
     
-    # Store only image IDs, not full metadata (reduces from 2.3 GB to ~3 MB)
     for image_id, metadata in image_index.items():
         for topic in metadata['topics']:
             topic_index[topic].append(image_id)
@@ -415,9 +402,8 @@ def main():
     print("=" * 60)
     print("EXPERIMENTAL INDEXING COMPLETE")
     print("=" * 60)
-    print(f"Enhanced articles: {exp_articles_dir}")
+    print(f"Enhanced articles: {ARTICLES_DIR}")
     print(f"Indexes: {EXPERIMENTAL_DIR}")
-    print("\nProduction files: UNCHANGED ✓")
     print()
 
 

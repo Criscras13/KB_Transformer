@@ -32,6 +32,21 @@
     ],
     "body": "<p>Yes, you can set a minimum password length for user accounts in your <a href='https://support.knowbe4.com/hc/en-us/articles/226457887-How-to-Edit-Your-Account-Settings'>Account Settings</a>. You can set the minimum length to be between 8 and 32 characters.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360012761813-Minimum-Password-Length-for-Users"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360012761813-Minimum-Password-Length-for-Users",
+    "images": [],
+    "metadata": {
+      "category": "Security Awareness Training",
+      "section": "Password Management",
+      "topics": [
+        "awareness",
+        "management",
+        "minimum",
+        "password",
+        "security",
+        "training",
+        "users"
+      ],
+      "image_count": 0
+    }
   }
 }

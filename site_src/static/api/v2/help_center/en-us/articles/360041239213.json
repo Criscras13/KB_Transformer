@@ -29,6 +29,22 @@
     ],
     "body": "<p><video autoplay='autoplay' controls='controls' width='800'>\n    <source src='https://helpimg.s3.amazonaws.com/KCM/KCM+Videos/QuestionnaireIssues_VendorFacing.mp4' type='video/mp4'></source></video></p>\n<p>For more information, see our <a href='https://support.knowbe4.com/hc/en-us/articles/360021761873' target='_blank' rel='noopener'>How to Complete Questionnaires and Respond to Issues: A Guide for Vendor Users</a> article.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360041239213-Video-for-Vendor-Users-Responding-to-Questionnaire-Issues-in-your-Vendor-Portal"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360041239213-Video-for-Vendor-Users-Responding-to-Questionnaire-Issues-in-your-Vendor-Portal",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "issues",
+        "portal",
+        "questionnaire",
+        "responding",
+        "users",
+        "vendor",
+        "video",
+        "your"
+      ],
+      "image_count": 0
+    }
   }
 }

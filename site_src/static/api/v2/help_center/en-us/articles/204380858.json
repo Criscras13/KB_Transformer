@@ -29,6 +29,17 @@
     ],
     "body": "<p>This is very likely a link filter that is enabled on your anti-spam or email filtering service. Several email services offer a \"link checking\" or \"anti-phishing\" functionality.\u00a0</p>\n<p>The first step is to ensure you have <a href='https://support.knowbe4.com/hc/en-us/articles/203645138' target='_self'>whitelisted either our hostnames or IP addresses</a>.</p>\n<p>Next, if you have whitelisted, and you still see 100% click rate, then there are two options:\u00a0</p>\n<p><strong>Option 1:</strong>\u00a0Disable your link filtering in your email service. This can be done temporarily for the duration of a phishing test if you wish.\u00a0</p>\n<p><strong>Option 2:</strong> Have us send our emails directly to your mail server and bypass your filtering service. This requires that we obtain your mail server information from you and configure our service to send to there directly.\u00a0</p>\n<p>If you wish to use Option 2, please check out <a href='https://support.knowbe4.com/hc/en-us/articles/360000568187-Smart-Hosting-for-Phishing-Security-Tests'>this article about Smart Hosting</a> and then contact support by <a href='https://support.knowbe4.com/hc/en-us/requests/new'>submitting a support ticket</a>.</p>\n",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/204380858-Showing-100-Click-Through-on-Phishing-Tests"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/204380858-Showing-100-Click-Through-on-Phishing-Tests",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "phishing",
+        "tests",
+        "through"
+      ],
+      "image_count": 0
+    }
   }
 }

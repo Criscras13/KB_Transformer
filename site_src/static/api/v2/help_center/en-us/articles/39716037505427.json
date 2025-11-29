@@ -28,6 +28,24 @@
     ],
     "body": "\n<p>If you use the Secure Message Portal, you can send secure emails only up to 50 MB. This limit applies to both free and paid users.</p>\n<p>If you try to upload files that add up to more than 50 MB, you will see an error message like this:</p>\n<p><a data-fancybox='single' data-src='https://helpimg.s3.amazonaws.com/egress/0EM4J000002dfUD.jpg'> <img src='https://helpimg.s3.amazonaws.com/egress/0EM4J000002dfUD.jpg' alt=''> </a></p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716037505427-How-Large-Can-Secure-Email-Attachments-Be"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716037505427-How-Large-Can-Secure-Email-Attachments-Be",
+    "images": [
+      {
+        "url": "https://helpimg.s3.amazonaws.com/egress/0EM4J000002dfUD.jpg",
+        "alt": "This image displays a system error notification dialog box characterized by a solid red background and white text, indicating a failure state and subsequent limitation.\n\n**UI Elements:**\n*   **Iconography:** A prominent white warning icon (shield surrounding an exclamation point) is positioned on the left side, confirming an alert state.\n*   **Dismissal Control:** A white 'X' icon is visible in the upper right corner, indicating the dialog is dismissible.\n\n**Text and Context:**\nThe notification provides the following English text, describing the failure reason and offering a resolution pathway:\n\n1.  **Error Header (First Line):** \"Failed to send the message\"\n2.  **Body Text (Second/Third Lines):** \"The size of attachments exceeds 50MB. Subscribe to Switch to send unlimited file sizes.\"\n\n**Function:** The message informs the user that an attempted message transmission failed due to exceeding a system-enforced 50MB attachment file size limit, and prompts the user to subscribe to a service named \"Switch\" to bypass this restriction.",
+        "position": 1,
+        "context": "u try to upload files that add up to more than 50 MB, you will see an error message like this:"
+      }
+    ],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "attachments",
+        "large",
+        "secure"
+      ],
+      "image_count": 1
+    }
   }
 }

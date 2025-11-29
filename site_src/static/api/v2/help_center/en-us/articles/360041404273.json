@@ -29,6 +29,19 @@
     ],
     "body": "<p><video autoplay='autoplay' controls='controls' width='800'>\n    <source src='https://helpimg.s3.amazonaws.com/KCM/KCM+Videos/KCMGRC_CreatingVendorProfiles.mp4' type='video/mp4'>\n  </source></video></p>\n<p>For more information, see our <a class='article-list-link' href='https://support.knowbe4.com/hc/en-us/articles/360021501394' target='_self'>How to Create and Manage Vendor Profiles</a> article.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360041404273-Video-Creating-Vendor-Profiles-and-Vendor-User-Accounts"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360041404273-Video-Creating-Vendor-Profiles-and-Vendor-User-Accounts",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "accounts",
+        "creating",
+        "profiles",
+        "vendor",
+        "video"
+      ],
+      "image_count": 0
+    }
   }
 }

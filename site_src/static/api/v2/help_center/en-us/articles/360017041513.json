@@ -29,6 +29,19 @@
     ],
     "body": "<p><video autoplay='autoplay' controls='controls' width='800'>\n    <source src='https://helpimg.s3.amazonaws.com/tuturial_videos/PasswordExposureTest.mp4' type='video/mp4'></source></video></p>\n<p id='h_01HVMDBQHA1ABSA3ES0TK0GK3X'>Check out our <a href='https://support.knowbe4.com/hc/en-us/articles/360013570174-Password-Exposure-Test-PET-'>Password Exposure Test Product Manual</a> for more information!</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360017041513-Video-Password-Exposure-Test-PET"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360017041513-Video-Password-Exposure-Test-PET",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "exposure",
+        "password",
+        "pet",
+        "test",
+        "video"
+      ],
+      "image_count": 0
+    }
   }
 }
