@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 39716038098707,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716038098707.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716038098707.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716038098707.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716038098707.html",
     "author_id": 31899104510995,
     "comments_disabled": true,
     "draft": false,
@@ -27,6 +27,7 @@
       "answerbot_protect"
     ],
     "body": "\n<p>Policies are used to determine the behavior of the Microsoft Outlook COM add-in. When changes are made to your policies, you must refresh the policies in your Microsoft Outlook COM add-in.</p>\n<p>To do this, follow the instructions below:</p>\n<ol>\n<li>Open the <strong>File</strong> menu in Microsoft Outlook.</li>\n<li>Select <strong>Egress</strong>.</li>\n<li>Ensure you are signed in and select <strong>Refresh Policies</strong>.</li>\n<li>Once you've done this, restart Microsoft Outlook. You will then have the latest version of your organization's policies, including any changes or updates.</li>\n</ol>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716038098707-How-to-Refresh-Policies-in-the-Microsoft-Outlook-Add-In"
   }
 }

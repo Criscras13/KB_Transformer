@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 39715998769043,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39715998769043.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39715998769043.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39715998769043.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39715998769043.html",
     "author_id": 31899104510995,
     "comments_disabled": true,
     "draft": false,
@@ -25,6 +25,7 @@
     "content_tag_ids": [],
     "label_names": [],
     "body": "\n<p><strong>Any successful and failed attempts to access an Egress email are audited.</strong>\u00a0<br>These audit logs are never deleted and can be accessed via:\u00a0</p>\n\n<ul><li>The <b>Sent Packages</b>\u00a0button within Outlook (you must have the Egress add-in enabled to use this feature)</li></ul>\n\n<div><img alt='' src='https://helpimg.s3.amazonaws.com/egress/0EM4J000001tM4m.jpg'></div>\n\n<ul><li>\u00a0Within the <b>Sent Packages</b>\u00a0area in your <a href='http://switch.egress.com/' target='_blank'>Egress Administration Panel</a>\u00a0</li></ul>\n\n<div><img alt='' src='https://helpimg.s3.amazonaws.com/egress/0EM4J000001tM4w.jpg'></div>\n\n<p>\u00a0</p>\n\n<p>Once you have accessed the audit log,\u00a0click the appropriate package. The 'Package properties' will open and you can select the\u00a0<b>Audit Events</b> tab\u00a0to show any successful and failed attempts to access the package.\u00a0<br><br><img alt='' src='https://helpimg.s3.amazonaws.com/egress/0EM4J000001tM6E.jpg'></p>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39715998769043-Has-my-Egress-Secure-Email-been-read"
   }
 }

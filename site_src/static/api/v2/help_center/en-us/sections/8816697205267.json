@@ -1,8 +1,8 @@
 {
   "section": {
     "id": 8816697205267,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/sections/8816697205267.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/sections/8816697205267.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/sections/8816697205267.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/sections/8816697205267.html",
     "category_id": 8816505020819,
     "position": 4,
     "sorting": "manual",
@@ -14,6 +14,7 @@
     "source_locale": "en-us",
     "outdated": false,
     "parent_section_id": null,
-    "theme_template": "section_page"
+    "theme_template": "section_page",
+    "source_url": "https://support.knowbe4.com/hc/en-us/sections/8816697205267-FAQs"
   }
 }

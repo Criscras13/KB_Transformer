@@ -1,12 +1,3 @@
-# Python standard library is used - no external dependencies needed
-# The data_transformer.py script uses only:
-# - json (stdlib)
-# - os (stdlib)
-# - time (stdlib)
-# - urllib.request (stdlib)
-# - urllib.error (stdlib)
-# - re (stdlib)
-
-# If you need to add external packages in the future, list them here
-# Example:
-# requests==2.31.0
+# Project 2 additions for image processing
+google-generativeai>=0.3.0
+Pillow>=10.0.0

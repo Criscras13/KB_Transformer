@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 39716013653779,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716013653779.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716013653779.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716013653779.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716013653779.html",
     "author_id": 31899104510995,
     "comments_disabled": true,
     "draft": false,
@@ -27,6 +27,7 @@
       "answerbot_protect"
     ],
     "body": "\n<p>The Microsoft Outlook add-in uses the Outlook OnSend feature, which can delay mail processing for up to 60 seconds. The default upload interval for OnSend is 15 seconds, with a maximum of 60 seconds.</p>\n<p>The registry key below can be used to override this, such as to an interval of one second up to a maximum of five seconds. This feature ensures that users never wait more than the specified maximum amount of time for a sync to occur.</p>\n<p>The following .reg file configures an upload interval of one second with a fivesecond maximum. The .reg file can be found <a href='https://egress.my.salesforce.com/sfc/p/1t000000Dwuv/a/8d000000u8MJ/2pYh9zsvQ1e.mwyqRMIqhhWrNt3xK7RkCoWT3bvUjG4' target='_blank' rel='noopener'>here</a>.</p>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716013653779-Microsoft-Outlook-Desktop-Sync-Interval"
   }
 }

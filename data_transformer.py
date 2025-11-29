@@ -6,7 +6,7 @@ import urllib.error
 import re
 
 BASE_URL = "https://support.knowbe4.com/api/v2/help_center/en-us"
-GITHUB_URL = "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us"
+GITHUB_URL = "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us"
 OUTPUT_DIR = "site_src/static/api/v2/help_center/en-us"
 
 def ensure_dir(path):
@@ -80,6 +80,10 @@ def transform_body_content(body_content):
     return body_content
 
 def transform_item(item, resource_name):
+    # Store original html_url as source_url for official KB links
+    if 'html_url' in item:
+        item['source_url'] = item['html_url']
+    
     if 'url' in item:
         item['url'] = transform_url(item['url'])
     

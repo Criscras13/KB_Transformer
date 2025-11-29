@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 204467478,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/204467478.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/204467478.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/204467478.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/204467478.html",
     "author_id": 1450288687,
     "comments_disabled": true,
     "draft": false,
@@ -38,6 +38,7 @@
       "team dashboard"
     ],
     "body": "<p><span>When you are ready to take your training, it is important to know if we support the browser you will be using. Using a browser we support will help you avoid issues that could interrupt your training. Please see the table below to see which browsers we support.</span></p>\n<table>\n<thead>\n<tr>\n<th scope='col'>\u00a0</th>\n<th scope='col'>Chrome</th>\n<th scope='col'>Microsoft Edge</th>\n<th scope='col'>Firefox</th>\n<th scope='col'>Safari</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope='row'>Windows</th>\n<td>Compatible</td>\n<td>Compatible</td>\n<td>Compatible</td>\n<td>\u00a0</td>\n</tr>\n<tr>\n<th scope='row'>MacOS</th>\n<td>Compatible</td>\n<td>\u00a0</td>\n<td>Compatible</td>\n<td>Compatible</td>\n</tr>\n<tr>\n<th scope='row'>iPhone (iPhone 10+)</th>\n<td>Compatible</td>\n<td>\u00a0</td>\n<td>\u00a0</td>\n<td>Compatible</td>\n</tr>\n<tr>\n<th scope='row'>iPad (11 inch Pro)</th>\n<td>Compatible</td>\n<td>\u00a0</td>\n<td>\u00a0</td>\n<td>Compatible</td>\n</tr>\n<tr>\n<th scope='row'>Android (Galaxy S10)</th>\n<td>Compatible</td>\n<td>\u00a0</td>\n<td>\u00a0</td>\n<td>\u00a0</td>\n</tr>\n</tbody>\n</table>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/204467478-Learner-Support-Browser-Compatibility"
   }
 }

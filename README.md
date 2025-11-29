@@ -1,176 +1,141 @@
-# KnowBe4 Static API Replica
+# KB_Transformer
 
-This project is a static replica of the KnowBe4 Help Center API (Zendesk V2), built using [Hugo](https://gohugo.io/) and hosted on GitHub Pages. It serves static JSON files that mimic the structure and content of the real API endpoints.
+KnowBe4 Help Center API with AI-enhanced image enrichment for internal use.
 
-## How It Works
+## Purpose
 
-1.  **Data Generation**: A Python script (`data_transformer.py`) fetches fresh data from the KnowBe4 API:
-    *   Fetches categories, sections, and articles via API calls
-    *   Rewrites URLs to point to this GitHub Pages site
-    *   Generates both `.json` files (for API clients) and `.html` wrapper files (for AI browsing tools)
-    *   Saves all files directly to `site_src/static/api/v2/help_center/en-us/`
+Enable AI agents to:
+1. Browse enhanced articles with image URLs
+2. Share official KnowBe4 article links with users
+3. Provide clickable screenshot links
 
-2.  **Static Site Building**: Hugo is used as a simple static file copier:
-    *   Hugo copies all files from `site_src/static/` to the output directory
-    *   No template processing or data transformation occurs in Hugo
-    *   The site is pre-built with all JSON and HTML files ready to serve
+## Example GEM Response
 
-3.  **Deployment**:
-    *   A GitHub Actions workflow (`.github/workflows/hugo.yaml`) triggers on every push to the `main` branch
-    *   It builds the Hugo site and deploys the generated `public/` directory to the `gh-pages` branch
-    *   GitHub Pages serves these static files, making them accessible via public URLs
-
-## API Endpoints
-
-**Base URL:** `https://Criscras13.github.io/API_testing/`
-
-This API is available in two formats:
-
-### For AI Agents/Browsers (Google GEMs, etc.)
-
-**Use these `.html` URLs if you are using AI tools that browse webpages:**
-
-*   **Categories:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/categories.html
-    ```
-
-*   **Sections:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/sections.html
-    ```
-
-*   **Articles:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles.html
-    ```
-
-*   **Individual Articles:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/{id}.html
-    ```
-
-These HTML endpoints display the JSON data wrapped in HTML `<pre>` tags, making them accessible to AI browsing tools that require `text/html` content type.
+> To create a webhook:
+> 
+> 1. Go to Account Settings > Integrations
+>    **Screenshot:** https://s3.amazonaws.com/helpimg/webhook_menu.png
+> 
+> 2. Click "Create" button
+>    **Screenshot:** https://s3.amazonaws.com/helpimg/create_button.png
+> 
+> **Full article:** https://support.knowbe4.com/hc/en-us/articles/10103021848723
 
 ---
 
-### For API Clients (Programmatic Access)
+## API Structure
 
-**Use these `.json` URLs if you are writing code or using API clients:**
+### Standard Endpoints
+- Categories: `/api/v2/help_center/en-us/categories.html`
+- Sections: `/api/v2/help_center/en-us/sections.html`
+- Articles: `/api/v2/help_center/en-us/articles.html`
 
-*   **Categories:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/categories.json
-    ```
+### Enhanced Endpoints (For GEM)
+- Enhanced Articles: `/api/v2/help_center/en-us/experimental/articles.html`
+- Visual Search: `/api/v2/help_center/en-us/experimental/topics_to_images.html`
+- Image Index: `/api/v2/help_center/en-us/experimental/image_index.html`
 
-*   **Sections:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/sections.json
-    ```
+---
 
-*   **Articles:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles.json
-    ```
+## Article Structure
 
-*   **Individual Articles:**
-    ```
-    https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/{id}.json
-    ```
+Each enhanced article contains:
 
-These JSON endpoints serve raw JSON data with `application/json` content type.
+```json
+{
+  "id": 123,
+  "title": "How to Create Webhooks",
+  "html_url": "https://Criscras13.github.io/KB_Transformer/.../123.html",
+  "source_url": "https://support.knowbe4.com/hc/en-us/articles/123-How-to-Create-Webhooks",
+  "images": [
+    {
+      "url": "https://s3.amazonaws.com/helpimg/webhook.png",
+      "alt": "AI description of screenshot",
+      "position": 1
+    }
+  ]
+}
+```
 
+- **html_url** - AI browses this (GitHub mirror with images)
+- **source_url** - AI shares this (official KnowBe4 article)
+- **images.url** - AI shares these (screenshot links)
+
+---
+
+## GEM Configuration
+
+### Knowledge Sources
+```
+1. https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/experimental/articles.html
+2. https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/experimental/topics_to_images.html
+3. https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/experimental/image_index.html
+```
+
+### Instructions
+```
+When answering KnowBe4 questions:
+1. Browse enhanced articles for content
+2. Include screenshot URLs from images array
+3. Link to source_url for official article
+4. Format: "**Screenshot:** [url]" and "**Full article:** [source_url]"
+```
+
+---
 
 ## Updating Data
 
-To update the data served by this API, you have two options:
-
-### Option 1: Using Docker (Recommended)
-
-If you have Docker installed, use the helper scripts:
-
+**Windows:**
 ```bash
-# Linux/Mac
-./update-data.sh
-
-# Windows
 update-data.bat
 ```
 
-This will fetch fresh data and save it to `site_src/static/`.
-
-### Option 2: Traditional Method
-
-Run the Python script directly:
-
+**Linux/Mac:**
 ```bash
-python data_transformer.py
-```
-
-*Note: This requires Python 3.x and internet access to reach `support.knowbe4.com`.*
-
-### After Running Either Method
-
-1.  **Commit and Push**:
-    After the data is updated, commit the updated files and push to the `main` branch.
-    ```bash
-    git add site_src/static/
-    git commit -m "Update API data"
-    git push origin main
-    ```
-
-2.  **Automatic Deployment**:
-    The GitHub Actions workflow will automatically rebuild the site and deploy the updated data to GitHub Pages.
-
-## 🐳 Docker Setup (Optional)
-
-Docker support is available for local development and testing. This makes it easy to work on the project without installing Hugo or Python locally.
-
-### Prerequisites
-
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed
-- Docker Compose (included with Docker Desktop)
-
-### Quick Start with Docker
-
-#### Fetch Fresh API Data
-```bash
-# Linux/Mac
 ./update-data.sh
-
-# Windows
-update-data.bat
 ```
 
-#### Run Local Hugo Server
+**What it does:**
+1. Fetches categories, sections, articles from KnowBe4 API
+2. Adds source_url to all 1,004 articles
+3. Builds experimental indexes with image enrichment
+
+**Then deploy:**
 ```bash
-# Linux/Mac
-./serve-local.sh
-
-# Windows
-serve-local.bat
-
-# Visit http://localhost:1313 to view your site
+git add .
+git commit -m "Update data"
+git push origin main
 ```
 
-#### Build Static Site
-```bash
-# Linux/Mac
-./build-site.sh
+---
 
-# Windows
-build-site.bat
+## Statistics
+
+- **Articles:** 1,004 (all with source_url + images)
+- **Images:** 3,519 AI-described screenshots
+- **Topics:** 640 searchable keywords
+- **Size:** ~86 MB
+
+---
+
+## Project Structure
+
+```
+KB_Transformer/
+├── data_transformer.py              # Adds source_url field
+├── build_experimental_indexes.py    # Builds enhanced indexes
+├── image_captions.json              # AI descriptions cache
+├── site_src/
+│   └── static/api/v2/help_center/en-us/
+│       ├── categories/              # Standard (nav only)
+│       ├── sections/                # Standard (nav only)
+│       ├── articles/                # Standard (with source_url)
+│       └── experimental/            # Enhanced (with images)
 ```
 
-### Why Use Docker?
+---
 
-✅ **Consistent Environment:** Same Hugo version and Python dependencies for everyone  
-✅ **No Local Installation:** Don't need to install Hugo or Python on your machine  
-✅ **Easy Testing:** Test changes locally before pushing to GitHub  
-✅ **Isolation:** Won't conflict with other projects
+## Related Projects
 
-### Traditional Workflow (Still Works!)
-
-The traditional workflow (running `data_transformer.py` directly and using GitHub Actions for deployment) continues to work unchanged. Docker is purely optional for local development.
-
-**For detailed Docker documentation, see [DOCKER.md](DOCKER.md).**
+- **Project 1:** [API_testing](https://github.com/Criscras13/API_testing) (Foundation)
+- **Project 2:** [API_image_testing](https://github.com/Criscras13/API_image_testing) (Enhancement)
