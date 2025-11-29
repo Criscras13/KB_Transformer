@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 39716021614227,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716021614227.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716021614227.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716021614227.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716021614227.html",
     "author_id": 31899104510995,
     "comments_disabled": true,
     "draft": false,
@@ -27,6 +27,7 @@
       "answerbot_protect"
     ],
     "body": "\n<p>To disable but not remove the Microsoft Outlook add-in, follow the steps below:</p>\n<ol>\n<li>Open Microsoft Outlook.</li>\n<li>Navigate to <strong>File</strong> &gt; <strong>Options</strong> &gt; <strong>Add-ins</strong>.</li>\n<li>At the bottom of the window under <strong>Manage</strong>, ensure the <strong>COM Add-ins</strong> option is selected and select <strong>Go</strong>.</li>\n<li>Unselect the box next to <strong>Egress</strong> and select <strong>OK</strong>.</li>\n<li>Close down Microsoft Outlook. The add-in should now be disabled.</li>\n</ol>\n<p>To remove the Microsoft Outlook add-in, follow the steps below:</p>\n<ol>\n<li>Ensure Microsoft Outlook is closed.</li>\n<li>On your device, navigate to <strong>Add or Remove Programs</strong>.</li>\n<li>Under <strong>Apps and Features</strong>, scroll down to <strong>Egress</strong>.</li>\n<li>Select <strong>Egress</strong> and then <strong>Uninstall</strong>.</li>\n<li>Follow the steps from the uninstaller.</li>\n</ol>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716021614227-How-to-Disable-or-Remove-the-Microsoft-Outlook-Add-In-for-Your-Organization"
   }
 }

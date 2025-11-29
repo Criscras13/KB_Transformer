@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 115003526587,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/115003526587.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/115003526587.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/115003526587.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/115003526587.html",
     "author_id": 360322304667,
     "comments_disabled": true,
     "draft": false,
@@ -32,6 +32,7 @@
       "answerbot_kmsat"
     ],
     "body": "<div style='padding: 56.25% 0 0 0; position: relative'><iframe src='https://player.vimeo.com/video/649229467' frameborder='0' allow='autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/115003526587-Video-Reply-To-Phishing"
   }
 }

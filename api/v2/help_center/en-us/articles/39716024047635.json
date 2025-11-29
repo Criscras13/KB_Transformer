@@ -1,8 +1,8 @@
 {
   "article": {
     "id": 39716024047635,
-    "url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716024047635.json",
-    "html_url": "https://Criscras13.github.io/API_testing/api/v2/help_center/en-us/articles/39716024047635.html",
+    "url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716024047635.json",
+    "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/39716024047635.html",
     "author_id": 31899104510995,
     "comments_disabled": true,
     "draft": false,
@@ -27,6 +27,7 @@
       "answerbot_protect"
     ],
     "body": "\n<p>After opening a secure email, you may be asked for an additional password or a PIN after signing in with your ID and password.\u00a0</p>\n<p>This email is referencing an additional password created by the sender and should have been sent to you separately.</p>\n<p>If you have not received an additional password or the password is not working, please contact the original sender of the secure email, who will be able to confirm the correct additional password for you.</p>",
-    "user_segment_ids": []
+    "user_segment_ids": [],
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716024047635-Additional-Password-or-PIN-Protected-Emails"
   }
 }
