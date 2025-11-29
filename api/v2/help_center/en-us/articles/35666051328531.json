@@ -30,6 +30,26 @@
     ],
     "body": "<p>Welcome to the Defend Resource Hub. We hope to make your onboarding experience as smooth as possible by providing you with the necessary resources for both admins and users.</p>\n<p><a data-fancybox='single' data-src='https://helpimg.s3.us-east-1.amazonaws.com/egress/resource-hub.png'> <img src='https://helpimg.s3.us-east-1.amazonaws.com/egress/resource-hub.png' alt=''> </a></p>\n<table>\n<caption>Resources for Defend Admins and Users</caption>\n<thead>\n<tr>\n<th style='width: 98.6562px;' scope='col'>Audience</th>\n<th style='width: 179.883px;' scope='col'>Resource Link</th>\n<th style='width: 411.461px;' scope='col'>Purpose</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style='width: 90.6562px;'>Admins</td>\n<td style='width: 171.883px;'><a href='https://support.knowbe4.com/hc/en-us/articles/35666035496723-Defend-Administrative-Resources'>Defend - Admin Resources</a></td>\n<td style='width: 403.461px;'>Guides to assist with the deployment process for the Defend console.</td>\n</tr>\n<tr>\n<td style='width: 90.6562px;'>Users</td>\n<td style='width: 171.883px;'><a href='https://support.knowbe4.com/hc/en-us/articles/35666079586707-Defend-User-Resources'>Defend - User Resources</a></td>\n<td style='width: 403.461px;'>Bite-sized videos and user guides to share with users to help them understand and maximize the functionalities of Defend.</td>\n</tr>\n</tbody>\n</table>\n<div class='callout-tip'>\n<div>\n<strong>Tip:</strong>To view a Defend product demo, see our <a href='https://support.knowbe4.com/hc/en-us/articles/360000937648'>KnowBe4 Product Demos</a> article.</div>\n</div>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/35666051328531-Defend-Resource-Hub"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/35666051328531-Defend-Resource-Hub",
+    "images": [
+      {
+        "url": "https://helpimg.s3.us-east-1.amazonaws.com/egress/resource-hub.png",
+        "alt": "This image depicts an email client interface displaying an open message with integrated security warnings and metadata banners.\n\n**Interface Elements:**\n\n*   **Toolbar:** Standard email action icons are visible: Delete (trash can), Reply, Reply All/Forward (envelopes with arrows), and a More Options menu (three horizontal lines).\n*   **Subject Line:** The subject is clearly displayed as: **\"Attn: Change to remittance details\"**.\n*   **Sender Information:** The sender is listed as **Tom Hazel** with the email address `<tom.hazel@supplychain.com>`.\n\n**Security and Contextual Banners (Injected Warnings):**\n\nFour distinct, colored banners are positioned directly beneath the email header, providing threat intelligence and contextual information:\n\n1.  **External Email (Blue Tag):** Labeled **\"External email >\"** (with a circular target icon), indicating the sender is outside the organization.\n2.  **First Time Sender (Blue Tag):** Labeled **\"First time sender >\"** (with a circular target icon), providing historical context about the sender.\n3.  **Impersonation Warning (Yellow Tag):** Labeled **\"This email shows signs of impersonation >\"** (with an \u2018i\u2019 icon), indicating potential identity spoofing.\n4.  **Phishing Alert (Red Tag):** Labeled **\"This email shows strong signs of phishing >\"** (with an \u2018X\u2019 icon), signifying high-risk malicious content detection.\n\n**Email Body:**\n\nThe content of the email body is represented by placeholder grey bars. A prominent, rounded, terracotta-colored horizontal bar is visible in the lower section, indicating a highlighted risk element, such as a malicious link or call-to-action button, within the message content.",
+        "position": 1,
+        "context": "th as possible by providing you with the necessary resources for both admins and users."
+      }
+    ],
+    "metadata": {
+      "category": "Defend",
+      "section": "Getting Started",
+      "topics": [
+        "defend",
+        "getting",
+        "hub",
+        "resource",
+        "started"
+      ],
+      "image_count": 1
+    }
   }
 }

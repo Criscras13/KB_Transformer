@@ -28,6 +28,18 @@
     ],
     "body": "\n<p>There are various ways your computer can be connected to the internet. We have tested the Protect Client in many different configurations, and there should be no issues with the following environments:</p>\n<ul>\n<li>Directly connected to the internet</li>\n<li>Behind a NAT firewall or router</li>\n<li>Behind the Microsoft ISA server</li>\n</ul>\n<p>If you are experiencing a connectivity problem and are unable to sign in to the Protect network, please contact your network admin. Issues are generally specific to your network environment and can be easily resolved.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716012192147-Will-Secure-Email-work-via-a-proxy-server"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716012192147-Will-Secure-Email-work-via-a-proxy-server",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "proxy",
+        "secure",
+        "server",
+        "via"
+      ],
+      "image_count": 0
+    }
   }
 }

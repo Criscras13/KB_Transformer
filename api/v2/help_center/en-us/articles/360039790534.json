@@ -29,6 +29,18 @@
     ],
     "body": "<p><video autoplay='autoplay' controls='controls' width='800'>\n    <source src='https://helpimg.s3.amazonaws.com/KCM/KCM+Videos/VendorAdmins_ReviewingQuestionnaires.mp4' type='video/mp4'>\n  </source></video></p>\n<p>For more information, see our <a class='article-list-link' href='https://support.knowbe4.com/hc/en-us/articles/360033813974' target='_self'>How to Review Questionnaires and Create Issues</a> article.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360039790534-Video-Reviewing-Vendor-Questionnaires"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360039790534-Video-Reviewing-Vendor-Questionnaires",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "questionnaires",
+        "reviewing",
+        "vendor",
+        "video"
+      ],
+      "image_count": 0
+    }
   }
 }

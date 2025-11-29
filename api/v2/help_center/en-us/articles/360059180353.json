@@ -26,6 +26,19 @@
     "label_names": [],
     "body": "<p><span>If you're experiencing issues with or have questions about the Partner Portal, you can <a href='https://knowbe4.force.com/partners/s/portal-support' target='_self'>submit a support ticket</a> to request assistance from our KnowBe4 Partner Portal Support team.\u00a0</span></p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360059180353-Partner-Portal-Submit-Portal-Support-Ticket"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/360059180353-Partner-Portal-Submit-Portal-Support-Ticket",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "partner",
+        "portal",
+        "submit",
+        "support",
+        "ticket"
+      ],
+      "image_count": 0
+    }
   }
 }

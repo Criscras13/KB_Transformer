@@ -26,6 +26,19 @@
     "label_names": [],
     "body": "\n<p>The content for uploaded policies and ModStore content are hosted at:</p>\n<ul role='list'>\n<li>s3.amazonaws.com/content.knowbe4.com/</li>\n<li>s3.amazonaws.com/modstore.knowbe4.com/</li>\n<li>s3.amazonaws.com/uploads.knowbe4.com/</li>\n</ul>\n<p>If you're having difficulty with the content loading for your users, please ensure you are allowing HTTPS traffic from s3.amazonaws.com.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/205150477-Where-are-the-Modules-ModStore-Content-and-Policies-Hosted"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/205150477-Where-are-the-Modules-ModStore-Content-and-Policies-Hosted",
+    "images": [],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "content",
+        "hosted",
+        "modstore",
+        "modules",
+        "policies"
+      ],
+      "image_count": 0
+    }
   }
 }

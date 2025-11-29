@@ -28,6 +28,24 @@
     ],
     "body": "\n<p>You may see the error below when attempting to open a secure email:</p>\n<p><a data-fancybox='single' data-src='https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0MpKn8ZpHnoh7u9QAovvm52SGsnjOTNTCMAFIunHxyHB5ZU9Haws_MV0eFqZTLGx2CNJy9qqw_gNum58THmMKA1YkSGF3vyeqzWglA1EhlHQMQsUgf8mCTettYnYRWBKbchb_?key=3PahmKvCuRaUzpXTsArYieu8'> <img src='https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0MpKn8ZpHnoh7u9QAovvm52SGsnjOTNTCMAFIunHxyHB5ZU9Haws_MV0eFqZTLGx2CNJy9qqw_gNum58THmMKA1YkSGF3vyeqzWglA1EhlHQMQsUgf8mCTettYnYRWBKbchb_?key=3PahmKvCuRaUzpXTsArYieu8' alt=''> </a></p>\n<p>This error occurs when the sender has placed time restrictions on the email, and you are trying to access it before or after those restrictions.</p>\n<p>To access this email, the message's author must alter the time and date restrictions. Once this has been done, you can view the email.</p>",
     "user_segment_ids": [],
-    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716049653779-Access-to-Message-Denied-Because-It-Has-Expired"
+    "source_url": "https://support.knowbe4.com/hc/en-us/articles/39716049653779-Access-to-Message-Denied-Because-It-Has-Expired",
+    "images": [
+      {
+        "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0MpKn8ZpHnoh7u9QAovvm52SGsnjOTNTCMAFIunHxyHB5ZU9Haws_MV0eFqZTLGx2CNJy9qqw_gNum58THmMKA1YkSGF3vyeqzWglA1EhlHQMQsUgf8mCTettYnYRWBKbchb_?key=3PahmKvCuRaUzpXTsArYieu8",
+        "alt": "This image displays a system notification indicating an access restriction error.\n\n**UI Elements and Context:**\nThe notification features a standard error icon on the left: a red 'X' centered within a red circular outline, signifying a critical failure or denial.\n\n**Text and Content:**\nThe accompanying black text explains the reason for the restriction. The full text reads:\n\"Access to message \"RB-181227-144623\" is denied because it has expired.\"\n\n**Data and Function:**\nThe message explicitly identifies the resource being accessed by a unique ID, **\"RB-181227-144623\"**. The failure condition is based on the **expiration** status of the specified message.",
+        "position": 1,
+        "context": "googleusercontent.com/docsz/AD_4nXf0MpKn8ZpHnoh7u9QAovvm52SGsnjOTNTCMAFIunHxyHB5ZU9Haws_MV0eFqZTLGx2"
+      }
+    ],
+    "metadata": {
+      "category": "",
+      "section": "",
+      "topics": [
+        "access",
+        "denied",
+        "expired"
+      ],
+      "image_count": 1
+    }
   }
 }
