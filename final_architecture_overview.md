@@ -28,26 +28,6 @@ We distinguish between where the AI **reads** information and where the AI **sen
     *   It includes **Screenshot URLs** from the `images` array.
     *   It provides the **Official Link** (`source_url`) for the full article.
     *   *Example:* `https://support.knowbe4.com/hc/en-us/articles/115015198248-Smart-Groups-Use-Cases`
-
----
-
-## 3. Data Structure Reference
-
-### Article JSON (`articles.json` & individual files)
-
-```json
-{
-  "id": 115015198248,
-  "title": "Smart Groups Use Cases",
-  
-  // 1. AI NAVIGATES HERE (Mirror)
-  "html_url": "https://Criscras13.github.io/KB_Transformer/api/v2/help_center/en-us/articles/115015198248.html",
-  
-  // 2. AI SHARES THIS (Official)
-  "source_url": "https://support.knowbe4.com/hc/en-us/articles/115015198248-Smart-Groups-Use-Cases",
-  
-  // 3. AI SHARES THESE (Images)
-  "images": [
     {
       "url": "https://s3.amazonaws.com/helpimg/smart_groups.png",
       "alt": "Smart Groups Dashboard",
