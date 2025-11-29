@@ -6,21 +6,6 @@ Generates enhanced articles, image index, and topic index with HTML wrappers.
 import json
 import os
 import re
-from pathlib import Path
-from collections import defaultdict
-import html
-
-# Configuration
-BASE_URL = "https://Criscras13.github.io/KB_Transformer"
-print(f"DEBUG: BASE_URL is {BASE_URL}")
-BASE_DIR = Path("site_src/static/api/v2/help_center/en-us")
-ARTICLES_DIR = BASE_DIR / "articles"
-EXPERIMENTAL_DIR = BASE_DIR / "experimental"
-IMAGE_CAPTIONS_FILE = Path("image_captions.json")
-
-STOP_WORDS = {
-    'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
-    'of', 'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been',
     'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
     'should', 'could', 'may', 'might', 'must', 'can', 'this', 'that',
     # UI/Common terms to ignore
@@ -210,100 +195,6 @@ def load_section_and_category_mapping():
     category_map = {}
     
     if sections_file.exists():
-        with open(sections_file, 'r', encoding='utf-8') as f:
-            sections_data = json.load(f)
-            for section in sections_data.get('sections', []):
-                section_map[section['id']] = {
-                    'name': section.get('name', ''),
-                    'category_id': section.get('category_id')
-                }
-    
-    if categories_file.exists():
-        with open(categories_file, 'r', encoding='utf-8') as f:
-            categories_data = json.load(f)
-            for category in categories_data.get('categories', []):
-                category_map[category['id']] = category.get('name', '')
-    
-    return section_map, category_map
-
-
-def process_articles(image_captions, section_map, category_map):
-    """Process all articles and create enhanced versions (Overwriting Standard)."""
-    if not ARTICLES_DIR.exists():
-        print(f"ERROR: Articles directory not found: {ARTICLES_DIR}")
-        return None, None, None
-    
-    # We now overwrite the standard articles directory with enhanced versions
-    # Indexes will still go to EXPERIMENTAL_DIR
-    EXPERIMENTAL_DIR.mkdir(parents=True, exist_ok=True)
-    
-    image_index = {}
-    articles_list = []
-    article_count = 0
-    total_images = 0
-    
-    print("Processing articles...")
-    
-    for article_file in ARTICLES_DIR.glob("*.json"):
-        article_count += 1
-        if article_count % 100 == 0:
-            print(f"  Processed {article_count} articles, {total_images} images...")
-        
-        try:
-            with open(article_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                article = data.get('article', {})
-        except Exception as e:
-            continue
-        
-        body = article.get('body', '')
-        images = extract_images_from_html(body, image_captions)
-        
-        if images:
-            total_images += len(images)
-        
-        section_id = article.get('section_id')
-        section_info = section_map.get(section_id, {})
-        section_name = section_info.get('name', '')
-        category_id = section_info.get('category_id')
-        category_name = category_map.get(category_id, '')
-        
-        image_descriptions = [img['alt'] for img in images if img['alt']]
-        topics = extract_topics(
-            article.get('title', ''),
-            section_name,
-            category_name,
-            image_descriptions
-        )
-        
-        # Create enhanced article with FULL URLs
-        article_id = article['id']
-        enhanced_article = article.copy()
-        
-        # URL Construction (Standard Path)
-        enhanced_article['url'] = f"{BASE_URL}/api/v2/help_center/en-us/articles/{article_id}.json"
-        enhanced_article['html_url'] = f"{BASE_URL}/api/v2/help_center/en-us/articles/{article_id}.html"
-        enhanced_article['images'] = images
-        enhanced_article['metadata'] = {
-            'category': category_name,
-            'section': section_name,
-            'topics': topics,
-            'image_count': len(images)
-        }
-        
-        # OVERWRITE Standard Article JSON
-        with open(article_file, 'w', encoding='utf-8') as f:
-            json.dump({"article": enhanced_article}, f, indent=2)
-        
-        # OVERWRITE Standard Article HTML
-        output_html = ARTICLES_DIR / f"{article_id}.html"
-        with open(output_html, 'w', encoding='utf-8') as f:
-            f.write(generate_html_wrapper(enhanced_article, f"Article {article_id}"))
-        
-        # Add to articles list (for the Index)
-        articles_list.append({
-            'id': article_id,
-            'title': article.get('title', ''),
             'url': enhanced_article['url'],
             'html_url': enhanced_article['html_url'],
             'image_count': len(images),
@@ -402,7 +293,7 @@ def main():
     print("=" * 60)
     print("EXPERIMENTAL INDEXING COMPLETE")
     print("=" * 60)
-    print(f"Enhanced articles: {ARTICLES_DIR}")
+    print(f"Enhanced articles: {exp_articles_dir}")
     print(f"Indexes: {EXPERIMENTAL_DIR}")
     print()
 
